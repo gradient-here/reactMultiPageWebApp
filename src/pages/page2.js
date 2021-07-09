@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import style from "./index.css";
+import style from "./page2.css";
 
 class PageOne extends Component {
 	constructor(props) {
@@ -10,19 +10,19 @@ class PageOne extends Component {
 	}
 
 	clickHandler() {
-		window.location.href = './page2.html';
+		window.location.href = './index.html';
 	}
 
 	render() {
 		return (
 			<div className={style.pageCont}>
 				<div className={style.title}>react multi page</div>
-				<div className={style.subtitle}>click the button below to go to page two</div>
+				<div className={style.subtitle}>click the button below to go to page one</div>
 
 				<button 
 					className={style.button}
 					onClick={()=>this.clickHandler()}>
-					GOTO PAGE TWO
+					GOTO PAGE ONE
 				</button>
 			</div>
 		)
